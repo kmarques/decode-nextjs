@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: ./typescript
+      dockerfile: Dockerfile
+    ports: []
+    volumes:
+      - ./typescript:/app
+    working_dir: /app
