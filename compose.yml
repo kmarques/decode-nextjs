@@ -1,5 +1,5 @@
 services:
-  app:
+  ts:
     build:
       context: ./typescript
       dockerfile: Dockerfile
@@ -7,3 +7,14 @@ services:
     volumes:
       - ./typescript:/app
     working_dir: /app
+
+  react:
+    build:
+      context: ./react
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:5173:5173"
+    volumes:
+      - ./react:/app
+    working_dir: /app
+    command: ["npm", "run", "dev"]
