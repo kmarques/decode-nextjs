@@ -1,8 +1,11 @@
 import { getFormations } from "@/services/formation";
 import Link from "next/link";
+import FormationsFrontByAPI from "./components/FormationsFrontByAPI";
+import FormationsFrontByStream from "./components/FormationsFrontByStream";
 
 export default async function FormationsPage() {
   const formations = await getFormations();
+  const streamFormations = getFormations();
   return (
     <>
       <h1>Nos Formations</h1>
@@ -22,6 +25,12 @@ export default async function FormationsPage() {
             </Link>
           </div>
         ))}
+      </div>
+      <div>
+        Formations chargées par API
+        <FormationsFrontByAPI />
+        Formations chargées par Stream
+        <FormationsFrontByStream formations={streamFormations} />
       </div>
     </>
   );
