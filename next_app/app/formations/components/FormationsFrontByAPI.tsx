@@ -1,5 +1,6 @@
 "use client";
 
+import api from "@/services/api";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -14,7 +15,7 @@ export default function FormationsFrontByAPI() {
 
   useEffect(() => {
     async function grapFormations() {
-      const resp = await fetch("/api/formations");
+      const resp = await api.request("/api/formations");
       setFormations(await resp.json());
     }
     grapFormations();

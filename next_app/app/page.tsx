@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,6 +25,15 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+        <Link href="/formations" className="text-lg underline">
+          Voir les formations
+        </Link>
+        <Link href="/auth/register" className="text-lg underline">
+          Aller à la page d&apos;enregistrement
+        </Link>
+        <Link href="/auth/login" className="text-lg underline">
+          Aller à la page de login
+        </Link>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a

@@ -239,3 +239,5 @@ sketch
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,node,react,nextjs
 
 **/dist
+
+next_app/firebase-config.json
