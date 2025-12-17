@@ -240,4 +240,5 @@ sketch
 
 **/dist
 
-next_app/firebase-config.json
+next_app/firebase-front-config.json
+next_app/firebase-back-config.json

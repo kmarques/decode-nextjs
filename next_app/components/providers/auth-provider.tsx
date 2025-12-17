@@ -8,7 +8,7 @@ import {
   User,
   getIdToken,
 } from "@firebase/auth";
-import { auth } from "@/lib/firebase";
+import { auth } from "@/lib/firebase-front";
 import api from "@/services/api";
 
 export const AuthContext = createContext<{

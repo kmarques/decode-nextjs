@@ -13,6 +13,7 @@
     "@firebase/app": "^0.14.5",
     "@firebase/auth": "^1.11.1",
     "@firebase/firestore": "^4.9.2",
+    "firebase-admin": "^13.6.0",
     "next": "16.0.2",
     "react": "19.2.0",
     "react-dom": "19.2.0"
